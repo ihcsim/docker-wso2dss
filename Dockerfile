@@ -19,4 +19,5 @@ RUN unzip /opt/wso2dss-3.2.0.zip -d /opt
 RUN rm /opt/wso2dss-3.2.0.zip
 
 EXPOSE 9443
-CMD ["/opt/wso2dss-3.2.0/bin/wso2server.sh","start"]
+CMD ["/opt/wso2dss-3.2.0/bin/wso2server.sh"]
+
