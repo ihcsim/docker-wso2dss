@@ -3,7 +3,7 @@ docker-wso2dss3.2.0
 
 Docker image to install and run WSO2 Data Service Server 3.2.0. It uses the [dockerfile/java](https://index.docker.io/u/dockerfile/java/) as its base image.
 
-[![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
+If you find this helpful, feel free to endorse me on [coderwall](https://coderwal.com/ivanhcsim). [![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
 
 The dockerfile will:
 * Set the `JAVA_HOME` environmental variable.
