@@ -14,5 +14,8 @@ The dockerfile will:
 * Expose the container port `9443`.
 * Set the DSS `wso2server.sh` start-up script as the container start-up command.
 
-To build: `docker build --rm -t your_image_name .`
+### Usage
+* To pull: `docker pull isim/docker-wso2dss`
+* To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2dss`
+* To run: `docker run --rm --name your_container_name your_image_name`
 
