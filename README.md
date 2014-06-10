@@ -18,5 +18,5 @@ The dockerfile will:
 * To pull: `docker pull isim/wso2dss`
 * To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2dss`
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
-* To access DSS web admin console, navigate to https://localhost:9443
+* To access DSS web admin console, navigate to `https://localhost:9443`
 
