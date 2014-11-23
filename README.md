@@ -6,7 +6,6 @@ Docker image to install and run WSO2 Data Service Server. It uses the [dockerfil
 If you find this helpful, feel free to endorse me on [coderwall](https://coderwal.com/ivanhcsim). [![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
 
 The dockerfile will:
-* Set the `JAVA_HOME` environmental variable.
 * Use `wget` to pull the DSS 3.2.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
 * Unzip the DSS 3.2.0 ZIP.
@@ -20,3 +19,6 @@ The dockerfile will:
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
 * To access DSS web admin console, navigate to `https://localhost:9443`
 
+Follow me on [![alt text][1.1]][1]
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[1]: http://www.twitter.com/IvanHCSIM
