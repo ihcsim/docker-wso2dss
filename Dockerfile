@@ -2,7 +2,7 @@
 # WSO2 DSS 3.2.0
 #
 FROM java:7
-MAINTAINER isim, ihcsim@gmail.com
+MAINTAINER Ivan Sim, ihcsim@gmail.com
 
 RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2dss-3.2.0.zip && \
     apt-get update && \ 
