@@ -1,5 +1,4 @@
-docker-wso2dss
-===================
+### docker-wso2dss
 
 Docker image to install and run WSO2 Data Service Server. It uses the [dockerfile/java](https://index.docker.io/u/dockerfile/java/) as its base image.
 
