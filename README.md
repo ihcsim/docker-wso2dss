@@ -1,23 +1,30 @@
 ### docker-wso2dss
 
-Docker image to install and run WSO2 Data Service Server. It uses the [dockerfile/java](https://index.docker.io/u/dockerfile/java/) as its base image.
+Docker image to install and run WSO2 Data Service Server.
 
-If you find this helpful, feel free to endorse me on [coderwall](https://coderwal.com/ivanhcsim). [![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
+### Tags
+
+* [3.2.2, latest](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.2.2)
+* [3.2.0](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.2.0)
+* [3.1.1](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.1.1)
+
+### Description
 
 The dockerfile will:
 
 * Use `wget` to pull the DSS 3.2.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
-* Unzip the DSS 3.2.0 ZIP.
-* Remove the DSS 3.2.0 ZIP.
-* Expose the container port `9443`.
-* Set the DSS `wso2server.sh` start-up script as the container start-up command.
+* Unzip the DSS ZIP.
+* Remove the DSS ZIP.
+* Expose the container port `9443`, `9763`, `8243`, 8280`.
+* Set the `wso2server.sh` start-up script as the container entrypoin.
 
 ### Usage
+
 * To pull: `docker pull isim/wso2dss`
 * To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2dss`
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
-* To access DSS web admin console, navigate to `https://localhost:9443`
+* To access web admin console, navigate to `https://localhost:9443`
 
 Follow me on [![alt text][1.1]][1]
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)

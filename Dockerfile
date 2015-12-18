@@ -12,5 +12,4 @@ RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2dss-3.2.2.z
     rm /opt/wso2dss-3.2.2.zip
 
 EXPOSE 9443 9763 8243 8280
-CMD ["/opt/wso2dss-3.2.2/bin/wso2server.sh"]
-
+ENTRYPOINT ["/opt/wso2dss-3.2.2/bin/wso2server.sh"]
