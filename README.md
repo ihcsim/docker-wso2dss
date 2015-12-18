@@ -17,7 +17,7 @@ The dockerfile will:
 * Install `zip`.
 * Unzip the DSS ZIP.
 * Remove the DSS ZIP.
-* Expose the container port `9443`, `9763`, `8243`, 8280`.
+* Expose the container port `9443`, `9763`, `8243`, `8280`.
 * Set the `wso2server.sh` start-up script as the container entrypoin.
 
 ### Usage
