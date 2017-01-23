@@ -1,0 +1,16 @@
+dss:
+  build:
+    image: isim/wso2dss
+    dockerfile: Dockerfile
+    args:
+      VCS_REF: bce91c0
+  cached: true
+
+http_test:
+  build:
+    dockerfile: Dockerfile-HttpTest
+  environment:
+    DSS_HOST: dss
+  links:
+    - dss
+  cached: true
