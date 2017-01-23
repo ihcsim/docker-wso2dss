@@ -1,19 +1,21 @@
 ### docker-wso2dss
 
+[ ![Codeship Status for ihcsim/docker-wso2dss](https://app.codeship.com/projects/0225c150-c36d-0134-3410-2621c39d51df/status?branch=master)](https://app.codeship.com/projects/197585)
+
 Docker image to install and run WSO2 Data Service Server.
 
 ### Tags
 
-* [3.5.0, latest](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.5.0)
+* [3.5.1, latest](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.5.1)
+* [3.5.0](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.5.0)
 * [3.2.2](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.2.2)
 * [3.2.0](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.2.0)
 * [3.1.1](https://github.com/ihcsim/docker-wso2dss/tree/dss-3.1.1)
 
 ### Description
-
 The dockerfile will:
 
-* Use `wget` to pull the DSS 3.5.0 ZIP from a S3 bucket into the container `/opt` folder.
+* Use `wget` to pull the DSS 3.5.1 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
 * Unzip the DSS ZIP.
 * Remove the DSS ZIP.
@@ -21,12 +23,11 @@ The dockerfile will:
 * Set the `wso2server.sh` start-up script as the container entrypoin.
 
 ### Usage
+To run the WSO2 DSS:
+```sh
+$ docker run -d --name dss -p 9443:9443 isim/wso2dss
+```
+To access web admin console, navigate to https://localhost:9443 using your web browser.
 
-* To pull: `docker pull isim/wso2dss`
-* To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2dss`
-* To run: `docker run --rm --name your_container_name -p 9443:9443 -p 9763:9763 -p 8243:8243 -p 8280:8280 isim/wso2dss`
-* To access web admin console, navigate to `https://localhost:9443`
-
-Follow me on [![alt text][1.1]][1]
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[1]: http://www.twitter.com/IvanHCSIM
+## License
+Refer to the [LICENSE](LICENSE) file. WSO2 license can be found [here](http://wso2.com/licenses).
